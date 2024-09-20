@@ -1,0 +1,96 @@
+:root {
+  --yellow: #f7c67d;
+  --blue: #3965c4;
+  --gray: #b5b1b1;
+  --green: #4caf50;
+  --green-dark: #45a049;
+  --main-dark: #2b3f5b;
+  --bg-color: #f6f5f2;
+  --dark-yellow-alfa: rgba(204, 142, 30, 0.1);
+}
+
+body {
+  color: var(--main-dark);
+  background-color: var(--bg-color);
+  font-family: 'Inter Display', sans-serif;
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+.back-to-link {
+  padding: 4px;
+  border: 1px solid;
+  height: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-link:hover {
+  background-color: var(--yellow);
+}
+
+.message {
+  font-size: 36px;
+  font-style: italic;
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  max-width: 375px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 24px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 32px;
+  }
+}
+
+@font-face {
+  font-family: 'Inter Display';
+  src: url('../../assets/fonts/InterDisplay/InterDisplay-Regular.woff2') format('woff2'),
+    url('../../assets/fonts/InterDisplay/InterDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Display';
+  src: url('../../assets/fonts/InterDisplay/InterDisplay-Medium.woff2') format('woff2'),
+    url('../../assets/fonts/InterDisplay/InterDisplay-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

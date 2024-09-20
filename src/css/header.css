@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  background-color: var(--main-dark);
+  height: 40px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.decor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  height: 410px;
+  border: 4px double;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background-color: var(--dark-yellow-alfa);
+}

@@ -1,0 +1,94 @@
+.participant-form-container {
+  margin-top: 34px;
+  display: flex;
+  gap: 30px 20px;
+  flex-wrap: wrap;
+  background: var(--gray);
+  height: 600px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border: 4px double;
+}
+
+.participant-form {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.participant-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.participant-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.participant-form input[type='text'],
+.participant-form input[type='email'],
+.participant-form input[type='date'],
+.participant-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.formbox {
+  display: flex;
+  gap: 40px;
+  justify-content: start;
+  align-items: center;
+}
+
+.fieldset {
+  display: flex;
+  gap: 40px;
+  width: 400px;
+  height: 84px;
+  border: none;
+}
+
+.legend-text {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.datepicker {
+  width: 220px;
+}
+
+.participant-form input[type='date'] {
+  width: 220px;
+}
+
+.participant-form button {
+  margin-top: 72px;
+  background-color: var(--green);
+  color: white;
+  padding: 50px 75px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 48px;
+  transition: background-color 0.3s;
+}
+
+.participant-form button:hover {
+  background-color: var(--green-dark);
+}
+
+.participant-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  background-color: beige;
+  border: 4px double #111;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.footer-social-icons {
+  margin-top: 6px;
+  display: flex;
+  width: 600px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-icon {
+  fill: var(--main-dark);
+  transition: fill 0.3s ease;
+}
+
+.footer-icon:hover {
+  fill: var(--yellow);
+}

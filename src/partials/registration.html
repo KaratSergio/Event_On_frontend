@@ -1,0 +1,38 @@
+<section class="container">
+  <div class="participant-form-container">
+    <form id="registrationForm" class="participant-form">
+      <h2>Register for Event</h2>
+      <label>
+        Full Name:
+        <input type="text" name="fullName" required />
+      </label>
+      <label>
+        Email:
+        <input type="email" name="email" required />
+      </label>
+      <div class="formbox">
+        <label class="datepicker">
+          Date of Birth:
+          <input type="date" name="birthday" required />
+        </label>
+        <fieldset class="fieldset">
+          <legend class="legend-text">Where did you hear about this event?</legend>
+          <label>
+            <input type="radio" name="source" value="Social media" required />
+            Social media
+          </label>
+          <label>
+            <input type="radio" name="source" value="Friends" required />
+            Friends
+          </label>
+          <label>
+            <input type="radio" name="source" value="Found myself" required />
+            Found myself
+          </label>
+        </fieldset>
+      </div>
+      <button type="submit">Register</button>
+    </form>
+    <a class="back-to-link" href="../index.html">back to events</a>
+  </div>
+</section>
