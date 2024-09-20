@@ -71,10 +71,10 @@ export const renderEvents = async (page = 1, filterCriteria = {}) => {
           </div>
         </div>
         <div class="event-link-container">
-          <a class="link-register" href="../registration-page.html?eventId=${
+          <a class="link-register" href="registration-page.html?eventId=${
             event._id
           }">Register</a>
-          <a class="link-view" href="../participants-page.html?eventId=${
+          <a class="link-view" href="participants-page.html?eventId=${
             event._id
           }&title=${encodeURIComponent(event.title)}">View</a>
         </div>

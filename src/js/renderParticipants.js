@@ -13,13 +13,16 @@ const getURLParam = paramName => {
   return params.get(paramName);
 };
 
+const isProduction = window.location.hostname.includes('github.io');
+const basePath = isProduction ? '/Event_On_frontend/assets/' : './img/';
+
 const generateParticipantsHTML = participants => {
   return participants
     .map(
       participant => `
     <li class="participant-item">
       <svg class="participant-icon" width="44" height="44">
-        <use href="./img/icon.svg#icon-user"></use>
+        <use href="${basePath}icon.svg#icon-user"></use>
       </svg>
       <div>
         <h3>${participant.fullName}</h3>

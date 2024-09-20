@@ -32,7 +32,7 @@
   background-color: white;
   border-radius: 8px;
   padding: 15px;
-  box-shadow: inset 6px 0px 6px rgba(0, 0, 0, 0.987);
+  box-shadow: inset 6px 0px 3px rgba(0, 0, 0, 0.987), inset -6px 0px 3px rgba(0, 0, 0, 0.987);
   width: calc(25% - 20px);
   min-width: 320px;
   height: 72px;
@@ -69,4 +69,5 @@
   font-size: 38px;
   font-weight: bold;
   color: var(--main-dark);
+  text-shadow: 1px 2px 3px rgba(252, 252, 252, 0.576);
 }

@@ -31,5 +31,5 @@ export const setElementText = (element, text) => {
 };
 
 export const createBackToEventsLink = participantsList => {
-  participantsList.innerHTML += `<a class="back-to-link list-link" href="../index.html">back to events</a>`;
+  participantsList.innerHTML += `<a class="back-to-link list-link" href="index.html">back to events</a>`;
 };
