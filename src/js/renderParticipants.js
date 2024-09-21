@@ -1,6 +1,7 @@
 import { fetchParticipants } from '../services/participantService';
 import { filterParticipants } from './filters';
 import {
+  getFilterElements,
   renderParticipantsList,
   displayMessage,
   createBackToEventsLink,
