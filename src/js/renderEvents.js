@@ -2,6 +2,7 @@ import { fetchEvents } from '../services/eventService';
 import { renderPagination } from './renderPagination';
 import { filterEvents } from './filters';
 import { getFilterElements, renderEventsContainer, displayMessage } from '../utils/domUtils';
+import { showLoader, hideLoader } from '../js/loader';
 
 let currentPage = 1;
 let totalPages = 1;
@@ -45,6 +46,8 @@ export const renderEvents = async (page = 1, filterCriteria = {}) => {
   const savedPage = sessionStorage.getItem('currentPage');
   const currentPageToUse = savedPage ? Number(savedPage) : page;
 
+  showLoader();
+
   try {
     const { events, totalPages: total } = await fetchEvents(currentPageToUse);
     totalPages = total;
@@ -71,9 +74,7 @@ export const renderEvents = async (page = 1, filterCriteria = {}) => {
           </div>
         </div>
         <div class="event-link-container">
-          <a class="link-register" href="registration-page.html?eventId=${
-            event._id
-          }">Register</a>
+          <a class="link-register" href="registration-page.html?eventId=${event._id}">Register</a>
           <a class="link-view" href="participants-page.html?eventId=${
             event._id
           }&title=${encodeURIComponent(event.title)}">View</a>
@@ -93,6 +94,8 @@ export const renderEvents = async (page = 1, filterCriteria = {}) => {
   } catch (error) {
     displayMessage(eventsContainer, '<p>Error loading events. Please try again later.</p>');
     console.error('Error fetching events:', error);
+  } finally {
+    hideLoader();
   }
 };
 
