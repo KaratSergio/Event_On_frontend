@@ -35,6 +35,9 @@ body {
   min-height: 100vh;
   position: relative;
 }
+.wrapper-participant {
+  min-height: 100%;
+}
 
 .back-to-link {
   padding: 4px;

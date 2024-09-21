@@ -9,6 +9,8 @@ import {
   clearContainer,
 } from '../utils/domUtils';
 
+import '../js/eventChart';
+
 const getURLParam = paramName => {
   const params = new URLSearchParams(window.location.search);
   return params.get(paramName);
